@@ -1,0 +1,65 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.form-wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-wrapper input {
+    font-size: 18px;
+    background-color: #363636;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.form-wrapper input:focus {
+    background-color: rgba(10, 10, 10, 0.562)
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+    color: aliceblue;
+    background-color: rgba(10, 10, 10, 0.562);
+}
+
+.cards-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 300px;
+    min-height: 600px;
+    background-color: rgba(10, 10, 10, 0.562);
+}
+
+.text-wrapper {
+    padding: 10px;
+}
