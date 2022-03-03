@@ -31,6 +31,7 @@
 
 .button-group {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -53,13 +54,55 @@
 }
 
 .card {
+    position: relative;
     border: 2px solid black;
+    overflow: hidden;
     width: 100%;
     max-width: 300px;
-    min-height: 600px;
+    min-height: 300px;
     background-color: rgba(10, 10, 10, 0.562);
+}
+
+.card img {
+    height: 21rem;
 }
 
 .text-wrapper {
     padding: 10px;
+}
+
+.text-wrapper h3 {
+    margin: 0;
+}
+
+.year-vote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.year-vote h2 {
+    margin: 0;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: rgba(10, 10, 10, 0.562);
+}
+
+.year-vote p {
+    margin: 0;
+}
+
+.item-desc {
+    /* opacity: 0; */
+    padding: 10px;
+    background-color: aliceblue;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: -120%;
+    transition: all 0.4s ease;
+}
+
+.card:hover .item-desc {
+    bottom: 0;
 }
