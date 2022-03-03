@@ -8,7 +8,6 @@ function Main() {
   const [data, setData] = useState([])
   const [page, setPage] = useState("1")
   const [input, setInput] = useState("spider")
-  const [theme, setTheme] = useState("light")
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=${page}&query="${input || "Spider"}`)
@@ -46,9 +45,6 @@ function Main() {
                         <div className="form-wrapper">
                         <input type="text" onChange={(e) => setInput(e.target.value)} placeholder="Search..." /> 
 
-                        <button onClick={handleToggle}>
-                            toggle
-                        </button>
 
                     <div className="button-group">
                         <button onClick={handlePrevBtn}>
